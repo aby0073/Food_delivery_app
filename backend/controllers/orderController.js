@@ -6,7 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 //config variables
 const currency = "inr";
 const deliveryCharge = 50;
-const frontend_URL = 'http://localhost:5173';
+const frontend_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
 
 // Placing User Order for Frontend using stripe
 const placeOrder = async (req, res) => {
@@ -54,7 +54,7 @@ const placeOrder = async (req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.json({ success: false, message: "Error" })
+        res.json({ success: false, message: error.message })
     }
 }
 
