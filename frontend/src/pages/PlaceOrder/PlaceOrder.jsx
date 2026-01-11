@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './PlaceOrder.css'
-import { StoreContext } from '../../Context/StoreContext'
+import { StoreContext } from '../../context/StoreContext'
 import { assets } from '../../assets/assets';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -53,7 +53,7 @@ const PlaceOrder = () => {
                 window.location.replace(session_url);
             }
             else {
-                toast.error("Something Went Wrong")
+                toast.error(response.data.message)
             }
         }
         else{

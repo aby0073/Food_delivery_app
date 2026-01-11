@@ -33,12 +33,12 @@ const Footer = () => {
           <h2>GET IN TOUCH</h2>
           <ul>
             <li>+1-212-456-7890</li>
-            <li>contact@tomato.com</li>
+            <li>contact@FoodieHub.com</li>
           </ul>
         </div>
       </div>
       <hr />
-      <p className="footer-copy">© 2024 Tomato.com - All Rights Reserved.</p>
+      <p className="footer-copy">© 2024 FoodieHub.com - All Rights Reserved.</p>
     </footer>
   );
 };
