@@ -22,4 +22,5 @@ node_modules
 *.sw?
 
 
+# .gitignore
 .env
